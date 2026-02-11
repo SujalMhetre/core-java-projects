@@ -53,19 +53,17 @@ This is **Version 1**, implemented without a database, designed purely for **lea
 
 ## 🔹 Project Structure
 
-student-management-system-v1/
-│
-├── src/
-│ └── com/
-│ └── sms/
-│ ├── model/ # Student class
-│ ├── dao/ # DAO interface
-│ ├── dao/impl/ # DAO implementation
-│ ├── service/ # Service interface
-│ ├── service/impl/ # Service implementation
-│ └── ui/ # MainApp.java (Console UI)
-│
-└── README.md
+- `student-management-system-v1/`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;• `src/`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• `com/sms/`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• `model/` — `Student.java`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• `dao/` — `StudentDAO.java`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• `dao/impl/` — `StudentDAOImpl.java`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• `service/` — `StudentService.java`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• `service/impl/` — `StudentServiceImpl.java`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;• `ui/` — `MainApp.java`  
+&nbsp;&nbsp;&nbsp;&nbsp;• `README.md`  
+&nbsp;&nbsp;&nbsp;&nbsp;• `.gitignore`  
 
 
 ---
