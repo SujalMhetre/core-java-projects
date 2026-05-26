@@ -1,17 +1,17 @@
 package com.sms.service.impl;
 
-import java.util.List;
 import com.sms.dao.StudentDAO;
-import com.sms.dao.impl.StudentDAOImpl;
+import com.sms.dao.impl.StudentDaoImpl;
 import com.sms.model.Student;
 import com.sms.service.StudentService;
+import java.util.List;
 
 public class StudentServiceImpl implements StudentService {
 
     private StudentDAO studentDAO;
 
     public StudentServiceImpl() {
-        this.studentDAO = new StudentDAOImpl();
+        this.studentDAO = new StudentDaoImpl();
     }
 
     @Override
@@ -61,22 +61,26 @@ public class StudentServiceImpl implements StudentService {
         if (student == null) {
             return false;
         }
-        if (student.getStudentId() <= 0) {
-            return false;
-        }
+
         if (student.getName() == null || student.getName().trim().isEmpty()) {
             return false;
         }
+
         if (student.getEmail() == null || !student.getEmail().contains("@")) {
             return false;
         }
+
         if (student.getAge() <= 0) {
             return false;
         }
+
         if (student.getCourse() == null || student.getCourse().trim().isEmpty()) {
             return false;
         }
 
+        if (student.getCgpa() <= 0) {
+            return false;
+        }
         return true;
     }
 }
